@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9EB56A68-3AA3-444A-8032-9255F2808234}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JewllaryShopManagment</RootNamespace>
+    <AssemblyName>JewllaryShopManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminModule.Designer.cs">
+      <DependentUpon>AdminModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bill.Designer.cs">
+      <DependentUpon>frm_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_categoryregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_categoryregistration.Designer.cs">
+      <DependentUpon>frm_categoryregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_customer.Designer.cs">
+      <DependentUpon>frm_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Faultmodule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Faultmodule.Designer.cs">
+      <DependentUpon>frm_Faultmodule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_loan.Designer.cs">
+      <DependentUpon>frm_loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ordermodule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ordermodule.Designer.cs">
+      <DependentUpon>frm_ordermodule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_purchasingRmodule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_purchasingRmodule.Designer.cs">
+      <DependentUpon>frm_purchasingRmodule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rdmodule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rdmodule.Designer.cs">
+      <DependentUpon>frm_rdmodule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_salesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_salesReport.Designer.cs">
+      <DependentUpon>frm_salesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RateModule.Designer.cs">
+      <DependentUpon>RateModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistraionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistraionForm.Designer.cs">
+      <DependentUpon>RegistraionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminModule.resx">
+      <DependentUpon>AdminModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bill.resx">
+      <DependentUpon>frm_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_categoryregistration.resx">
+      <DependentUpon>frm_categoryregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_customer.resx">
+      <DependentUpon>frm_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Faultmodule.resx">
+      <DependentUpon>frm_Faultmodule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_loan.resx">
+      <DependentUpon>frm_loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ordermodule.resx">
+      <DependentUpon>frm_ordermodule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_purchasingRmodule.resx">
+      <DependentUpon>frm_purchasingRmodule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rdmodule.resx">
+      <DependentUpon>frm_rdmodule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_salesReport.resx">
+      <DependentUpon>frm_salesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RateModule.resx">
+      <DependentUpon>RateModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistraionForm.resx">
+      <DependentUpon>RegistraionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jwellarypic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jwellarypic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroung.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroung1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ring1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeicon2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
